@@ -1,6 +1,6 @@
 const differenceInAges = (ages) => {
-  const youth = Math.min(...ages);
-  const oldest = Math.max(...ages);
+  const youth = Math.min.apply(null,ages);
+  const oldest = Math.max.apply(null,ages);
   return [youth,oldest,(oldest - youth)];
 };
 
